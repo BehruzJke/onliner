@@ -1,0 +1,30 @@
+{
+    "buy" : {
+        "min_price" : "50000",
+        "max_price" : "100000",
+        "rooms" : 3,
+        "min_area" : "40",
+        "max_area" : "100",
+        "newness" : "Вторичка",
+        "year_from" : "2000",
+        "year_to" : "2023",
+        "wall_material" : "Кирпич",
+        "region" : "Минск"
+    },
+    "rent" : {
+        "type" : "Квартира",
+        "rooms" : "3",
+        "price_from" : "500",
+        "price_to" : "1000",
+        "metro" : "Возле метро",
+        "region" : "Минск"
+    },
+    "car" : {
+
+    },
+
+    "forum" : {
+        "topic" : "Авто из Америки",
+        "message" : "bmw"
+    }
+}
