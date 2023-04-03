@@ -20,7 +20,13 @@
         "region" : "Минск"
     },
     "car" : {
-
+        "country" : "Беларусь",
+        "region" : "Минская обл.",
+        "city" : "Минск",
+        "brand" : "BMW",
+        "model" : "i3",
+        "price_from" : "30000",
+        "price_to" : "50000"
     },
 
     "forum" : {

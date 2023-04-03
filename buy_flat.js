@@ -72,6 +72,5 @@ test('Apply filters', async t => {
     await t.expect(Selector('.apartment-options__item').nth(1).innerText).contains(dataSet.buy.wall_material)
 });
 
-// test('Sort results');
 
 
