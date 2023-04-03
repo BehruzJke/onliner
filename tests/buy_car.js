@@ -6,7 +6,9 @@ fixture('Search a car')
     .skipJsErrors();
 
 test('Search for a car', async t =>{
+    //Set max window size before test
     await t.maximizeWindow()
+    //Declare element selectors
     const country = Selector('.vehicle-form__input').withText('Все страны'),
           region = Selector('.vehicle-form__input').withText('Все области'),
           city = Selector('.vehicle-form__input').withText('Все города'),
@@ -14,17 +16,19 @@ test('Search for a car', async t =>{
           model = Selector('.vehicle-form__input').withText('Модель'),
           price_from = Selector('input').withAttribute('placeholder','от'),
           price_to = Selector('input').withAttribute('placeholder','до')
-
-
+    //Country filter
     await t.click(country)
     await t.typeText(Selector('input').withAttribute('placeholder','Найти страну'),dataSet.car.country)
             .pressKey('down').pressKey('enter')
+    //Region filter
     await t.click(region)
     await t.typeText(Selector('input').withAttribute('placeholder','Найти область'),dataSet.car.region)
             .pressKey('down').pressKey('enter')
+    //City filter
     await t.click(city)
     await t.typeText(Selector('input').withAttribute('placeholder','Найти город'),dataSet.car.city)
             .pressKey('down').pressKey('enter')
+    //Brand filter
     await t.click(brand)
     await t.typeText(Selector('input').withAttribute('placeholder','Найти марку'),dataSet.car.brand)
             .pressKey('down').pressKey('enter')
