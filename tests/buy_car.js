@@ -6,6 +6,7 @@ fixture('Search a car')
     .skipJsErrors();
 
 test('Search for a car', async t =>{
+    await t.maximizeWindow()
     const country = Selector('.vehicle-form__input').withText('Все страны'),
           region = Selector('.vehicle-form__input').withText('Все области'),
           city = Selector('.vehicle-form__input').withText('Все города'),
